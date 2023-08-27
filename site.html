@@ -1,25 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chlorify</title>
+  <link rel="stylesheet" href="rainbow-animation.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "JetBrainsMonoNLNerdFontPropo-Bold", sans-serif;
+    }
+    #header-container {
+      background-color: black;
+      border: 1px solid whitesmoke;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+    }
+    #resim {
+      width: 76.8px;
+      height: 76.8px;
+      border: 5px solid whitesmoke;
+      border-right: none;
+      flex-shrink: 0;
+    }
+    #baslik {
+      margin-left: 20px;
+      color: whitesmoke;
+      font-size: 48px; /* Metin boyutunu ayarlayın */
+    }
+  </style>
 </head>
-
-<style>
-  #baslik{ padding: 20px 20px 20px 20px; color: whitesmoke; background-color: black; border: 5px solid  whitesmoke; margin: auto;}
-   #resim{width: 76.8px; float:left; border-top: 5px solid whitesmoke; border-left: 5px solid whitesmoke; border-bottom: 5px solid whitesmoke;}
-</style>
-
-
-<body style="background-color: #9BA4B5;">
-
-
-
-<header>
-    
-    <h1 id="baslik">Chlorify</h1>
-
-</header>
-
-
-    
+<div class="wrapper">
+<body>
+  <div id="header-container">
+    <div id="resim"></div>
+    <h1 id="baslik">HLORIFY</h1>
+  </div>
 </body>
+</div>
 </html>
