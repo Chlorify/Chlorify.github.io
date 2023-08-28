@@ -22,7 +22,7 @@
       transition: background-color 0.3s;
     }
     #header-container:hover {
-      background-color: #351c6a;
+      background-color: #30173e;
     }
     #resim {
       width: 120px;
@@ -47,16 +47,28 @@
       border-top: 5px solid #ccc;
       margin: 0px 0;
     }
+    
+    /* Style for the top line */
+    #top-line {
+      border-top: 4px solid #ccc;
+      margin: 0;
+    }
   </style>
 </head>
 <body>
   <div class="wrapper">
+    <!-- Top Line -->
+    <div id="top-line"></div>
+    
+    <!-- Header Container -->
     <div id="header-container">
       <div id="resim">
         <img src="logo1.png" alt="Logo">
       </div>
-      <h1 id="baslik">HLORIFY</h1>
+      <h1 id="baslik">CHLORIFY</h1>
     </div>
+    
+    <!-- Bottom Line -->
     <div id="line"></div>
   </div>
 </body>
