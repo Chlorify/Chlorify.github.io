@@ -56,7 +56,7 @@ function createOglPlane() {
       vec2 uMouseRL = vec2(uMouseL.x * (resolution.x / resolution.y), uMouseL.y);
       vec2 uMouseRLL = vec2(uMouseLL.x * (resolution.x / resolution.y), uMouseLL.y);
 
-      float r = 0.02;
+      float r = 0.5;
       // Draw three circles.
       float c = circle(uv - uMouseR, vec2(sin(time * .5) * .11, cos(time * .7) * .11));
       c += circle(uv - uMouseRL, vec2(sin(time * .7) * .11, cos(time * .8) * .11));
