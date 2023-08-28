@@ -1,0 +1,64 @@
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "JetBrainsMonoNLNerdFontPropo-Bold", sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  
+  canvas.metaball {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.5;
+  }
+  
+  #header-container {
+    background-color: #cb40a9;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+  }
+  #header-container:hover {
+    background-color: #bf4fa3;
+  }
+  
+  #picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: -20px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #picture img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  #header {
+    color: whitesmoke;
+    font-size: 48px;
+    margin: 0;
+  }
+  
+  #line {
+    border-top: 5px solid #ccc;
+    margin: 0px 0;
+  }
+  
+  /* Style for the top line */
+  #top-line {
+    border-top: 4px solid #ccc;
+    margin: 0;
+  }
+  

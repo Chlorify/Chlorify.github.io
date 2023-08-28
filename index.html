@@ -1,75 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chlorify</title>
-  <link rel="stylesheet" href="rainbow-animation.css">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: "JetBrainsMonoNLNerdFontPropo-Bold", sans-serif;
-      background-color: #f7f7f7;
-      color: #333;
-    }
-    #header-container {
-      background-color: #2a0240;
-      padding: 20px;
-      display: flex;
-      align-items: center;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      transition: background-color 0.3s;
-    }
-    #header-container:hover {
-      background-color: #30173e;
-    }
-    #resim {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      margin-right: -20px;
-      margin-left: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    #resim img {
-      max-width: 100%;
-      max-height: 100%;
-    }
-    #baslik {
-      color: whitesmoke;
-      font-size: 48px;
-      margin: 0;
-    }
-    #line {
-      border-top: 5px solid #ccc;
-      margin: 0px 0;
-    }
-    
-    /* Style for the top line */
-    #top-line {
-      border-top: 4px solid #ccc;
-      margin: 0;
-    }
-  </style>
-</head>
-<body>
-  <div class="wrapper">
-    <!-- Top Line -->
-    <div id="top-line"></div>
+  <div id="top-line"></div>
     
     <!-- Header Container -->
     <div id="header-container">
-      <div id="resim">
+      <div id="picture">
         <img src="logo1.png" alt="Logo">
       </div>
-      <h1 id="baslik">CHLORIFY</h1>
+      <h1 id="header">HLORIFY</h1>
     </div>
     
     <!-- Bottom Line -->
     <div id="line"></div>
-  </div>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chlorify</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="favicon.png" sizes="32x32">
+</head>
+<body>
+  <script type="module" src="script.js"></script>
+  <canvas class="metaball" width="500" height="500"></canvas>
 </body>
 </html>
