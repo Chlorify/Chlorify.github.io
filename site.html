@@ -10,34 +10,54 @@
       margin: 0;
       padding: 0;
       font-family: "JetBrainsMonoNLNerdFontPropo-Bold", sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
     }
     #header-container {
-      background-color: black;
-      border: 1px solid whitesmoke;
+      background-color: #2a0240;
       padding: 20px;
       display: flex;
       align-items: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s;
+    }
+    #header-container:hover {
+      background-color: #351c6a;
     }
     #resim {
-      width: 76.8px;
-      height: 76.8px;
-      border: 5px solid whitesmoke;
-      border-right: none;
-      flex-shrink: 0;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-right: -20px;
+      margin-left: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #resim img {
+      max-width: 100%;
+      max-height: 100%;
     }
     #baslik {
-      margin-left: 20px;
       color: whitesmoke;
-      font-size: 48px; /* Metin boyutunu ayarlayın */
+      font-size: 48px;
+      margin: 0;
+    }
+    #line {
+      border-top: 5px solid #ccc;
+      margin: 0px 0;
     }
   </style>
 </head>
-<div class="wrapper">
 <body>
-  <div id="header-container">
-    <div id="resim"></div>
-    <h1 id="baslik">HLORIFY</h1>
+  <div class="wrapper">
+    <div id="header-container">
+      <div id="resim">
+        <img src="logo1.png" alt="Logo">
+      </div>
+      <h1 id="baslik">HLORIFY</h1>
+    </div>
+    <div id="line"></div>
   </div>
 </body>
-</div>
 </html>
