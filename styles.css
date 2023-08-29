@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "JetBrainsMonoNLNerdFontPropo-Bold", sans-serif;
-  background-color: #f7f7f7;
+  background-color: rgb(35, 36, 37);
   color: #333;
   position: relative; /* Eklendi */
 }
@@ -18,18 +18,18 @@ canvas.metaball {
 }
 
 #header-container {
-  background-color: #cb40a9;
+  background-color: rgba(57, 62, 67, 0.6); /* Adjust the alpha value (0.8) for transparency */
   padding: 20px;
   display: flex;
   align-items: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s;
-  position: relative; /* Eklendi */
-  z-index: 1; /* Eklendi */
+  position: relative;
+  z-index: 1;
 }
 
 #header-container:hover {
-  background-color: #bf4fa3;
+  background-color: #261321;
 }
 
 #picture {
