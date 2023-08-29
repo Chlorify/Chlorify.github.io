@@ -1,4 +1,4 @@
-import { Renderer, Program, Geometry, Mesh, Vec2, Flowmap } from 'https://cdn.jsdelivr.net/npm/ogl/dist/ogl.mjs';
+import { Renderer, Program, Geometry, Mesh, Vec2, Flowmap } from './hey.mjs';
 
 const time = { value: 1.0 };
 const aspect = 1;
@@ -47,28 +47,55 @@ function createOglPlane() {
     }
     void main() {
       vec3 flow = texture2D(tFlow, vUv).rgb;
-
+      
       vec2 uv = vUv;
-
-      //uv -= uMouse;
+      
+      // uv -= uMouse;
       uv.x *= resolution.x / resolution.y;
       vec2 uMouseR = vec2(uMouse.x * (resolution.x / resolution.y), uMouse.y);
       vec2 uMouseRL = vec2(uMouseL.x * (resolution.x / resolution.y), uMouseL.y);
       vec2 uMouseRLL = vec2(uMouseLL.x * (resolution.x / resolution.y), uMouseLL.y);
-
-      float r = 0.2;
+      
+      float r = 0.6;
       // Draw three circles.
-      float c = circle(uv - uMouseR, vec2(sin(time * .5) * .11, cos(time * .7) * .11));
-      c += circle(uv - uMouseRL, vec2(sin(time * .7) * .11, cos(time * .8) * .11));
-      c += circle(uv - uMouseRLL, vec2(sin(time * .2) * .11, cos(time * .3) * .11));
-      vec3 ball = vec3(c / (1.5 * r), c / (1.2 * r), c / (3.5 * r));
-      gl_FragColor.rgb = vec3(1.0 - ball.x, 1.0 - ball.y, 1.0 - ball.z);
+      float circleSize1 = 0.2; // Adjust the size of the first circle
+      float c = circle(uv - uMouseR, vec2(sin(time * .5) * circleSize1, cos(time * .7) * circleSize1));
+      
+      float circleSize2 = 0.2; // Adjust the size of the second circle
+      c += circle(uv - uMouseRL, vec2(sin(time * .7) * circleSize2, cos(time * .8) * circleSize2));
+      
+      float circleSize3 = 0.2; // Adjust the size of the third circle
+      c += circle(uv - uMouseRLL, vec2(sin(time * .2) * circleSize3, cos(time * .3) * circleSize3));
+      
+      // Smoothstep to create a gradient effect on circle edges
+      c = smoothstep(0.3, 0.8, c);
+      
+      // Adjust the color values for darker purple circles and darker background
+      vec3 background = vec3(0, 0, 0); // Dark background color
+      vec3 circles = vec3(0.4, 0.1, 0.7); // Darker purple circles color
+      
+      // Create the glowing effect by adding the circle color and mixing with background
+      vec3 glowingCircles = circles * 1.7 + background;
+      vec3 finalColor = mix(background, glowingCircles, c);
+      
+      gl_FragColor.rgb = finalColor;
+      
       if (alpha > 0.0) {
-        gl_FragColor.a = alpha;
+          gl_FragColor.a = alpha;
       } else {
-        gl_FragColor.a = 0.0;
+          gl_FragColor.a = 0.0;
       }
-    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
   `;
 
   handleEvents();
