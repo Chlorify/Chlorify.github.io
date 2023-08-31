@@ -67,6 +67,7 @@ function createOglPlane() {
       float circleSize3 = 0.2; // Adjust the size of the third circle
       c += circle(uv - uMouseRLL, vec2(sin(time * .2) * circleSize3, cos(time * .3) * circleSize3));
       
+      
       // Smoothstep to create a gradient effect on circle edges
       c = smoothstep(0.3, 0.8, c);
       
@@ -85,17 +86,7 @@ function createOglPlane() {
       } else {
           gl_FragColor.a = 0.0;
       }
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-    
+  }  
   `;
 
   handleEvents();
