@@ -57,7 +57,7 @@ canvas.metaball {
 
 #line {
   border-top: 5px solid rgb(17, 17, 17, 0.6);
-  margin: 0px 0;
+  margin: 0px ;
 }
 #p1 {  
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -93,6 +93,13 @@ canvas.metaball {
   color: rgba(151, 76, 226, 0.63);  
   display: flex;
   align-items: center;
+ 
+ 
+}
+
+#example-projects h3:hover{
+
+
 }
 
 #example-projects p {
