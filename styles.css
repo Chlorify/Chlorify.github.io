@@ -64,7 +64,7 @@ canvas.metaball {
   padding: 20px;
   text-align: left;
   font-size: 24px;
-  color: rgb(227, 100, 221);
+  color: rgb(108, 223, 0);
   opacity: 0.7;
 }
 #example-projects {
@@ -76,7 +76,7 @@ canvas.metaball {
 #example-projects h2 {
   font-size: 24px;
   margin-bottom: 20px;
-  color: rgb(176, 110, 173);
+  color: rgb(241, 93, 93);
 }
 
 #example-projects ul {
@@ -90,7 +90,7 @@ canvas.metaball {
 
 #example-projects h3 {
   font-size: 20px;
-  color: rgba(151, 76, 226, 0.63);  
+  color: rgba(223, 178, 82, 0.925);  
   display: flex;
   align-items: center;
  
@@ -104,7 +104,7 @@ canvas.metaball {
 
 #example-projects p {
   margin: 10px 0;
-  color: rgb(176, 110, 173);
+  color: rgb(224, 164, 129);
 }
 
 
